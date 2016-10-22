@@ -25,7 +25,7 @@ img {
   background-color: #FDFDFD;
 }
 
-#logo {
+#welcome-link {
   font-size: 30px;
   color: #444;
   margin: 12px;
@@ -34,7 +34,7 @@ img {
   font-weight: 100;
 }
 
-#logo:hover {
+#welcome-link:hover {
   color:#28C7FB;
 }
 
@@ -47,24 +47,24 @@ img {
   display: inline-block;
 }
 
-#products {
+#products-link {
   color: #444;
   padding-right: 15px;
   text-decoration: none;
   display: inline-block;
 }
 
-#products:hover {
+#products-link:hover {
   color:#28C7FB;
 }
 
-#about {
+#about-link {
   color: #444;
   text-decoration: none;
     display: inline-block;
 }
 
-#about:hover {
+#about-link:hover {
   color:#28C7FB;
 }
 
@@ -133,7 +133,7 @@ img {
 
 #newsletter {
   margin: 18px;
-  padding-left: 18%;
+  padding-left: 23%;
   text-decoration: none;
   position: absolute;
   display: inline-block;
@@ -143,7 +143,7 @@ img {
 
 #legalese {
   margin: 18px;
-  padding-left: 30%;
+  padding-left: 35%;
   text-decoration: none;
   position: absolute;
   display: inline-block;
