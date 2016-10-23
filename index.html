@@ -8,6 +8,9 @@
     <script src="https://use.fontawesome.com/37fae591b3.js"></script>
     <!-- CSS FILES -->
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/content.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
     <!-- JS FILES -->
     <script src="js/index.js"></script>
   </head>
@@ -25,7 +28,7 @@
       <!-- WELCOME -->
       <div class="active" id="welcome">
         <img src="./media/waves.jpg" alt="">
-        <div id="welcome-text">
+        <div class="content-text" id="welcome-text">
           <h3>HEY GOOD LOOKING.</h3>
           <p>You're busy. You've got better things to do than shop for clothing.</p>
           <p>
@@ -38,24 +41,69 @@
       </div>
       <!-- PRODUCTS -->
       <div class="" id="products">
-        <img src="./media/trees.jpg" alt="">
+        <img src="./media/emma.jpg" alt="">
       </div>
       <!-- ABOUT US -->
       <div class="" id="about">
-        <img src="./media/waves.jpg" alt="">
+        <img src="./media/trees.jpg" alt="">
+        <div class="content-text" id="about-text">
+          <h3>OUR COMPANY</h3>
+          <p>
+            Back in 2011, Joe was working for an airline, and had numerous late nights trying to help passengers who had weddings,
+            funerals, and important meetings the next day and only had the clothes on their back. Knowing there was nothing he could do to help, with his sister,
+            Courtney, they created Leisure of NYC -- a clothing company obsessed with making sure you have the essentials you need, everywhere you go.
+          </p>
+          <p>
+            LEISURE is in your nearest hotel.  While most hotels don&#39;t have available space for an actual retail store, we do want to make sure you&#39;re
+            in clothes that make you feel at home, even when your luggage is still stuck at O&#39;Hare.  We&#39;re perfectionists, and we believe we&#39;ve made some of the
+            best clothing you&#39;ll want to never leave home without.
+          </p>
+<!--           <hr>
+<h3>OUR CLOTHING</h3>
+<p>
+  Sourced, sewn, and sold in the USA, our clothing is made using the best materials we could find. We use 100% long fiber combed cotton, making our
+  shirts some of the highest quality and the most durable out there. Comparable shirts retail above $80, making
+  Leisure of NYC one of the best values of any American Made shirt.
+</p> -->
+          <hr>
+          <h3>CONTACT US</h3>
+          <p>
+            Shoot us an email, we'd love to hear from you: <span style="color:#131516">joe@leisureofnyc.com</span> or <span style="color:#131516">courtney@leisureofnyc.com</span>
+          </p>
+        </div>
       </div>
     </div>
     <!-- FOOTER -->
     <div class="footer">
+
       <div id="copyright">
         <i class="fa fa-copyright" aria-hidden="true"></i> LEISURE OF NYC. MADE IN CALIFORNIA, USA.
       </div>
+
       <div id="social-icons">
         <a target="_blank" href="https://twitter.com/leisureofnyc"><i class="fa fa-twitter transition" aria-hidden="true"></i></a>
         <a target="_blank" href="https://www.instagram.com/leisureofnyc"><i class="fa fa-instagram transition" aria-hidden="true"></i></a>
       </div>
-        <a id="newsletter" href="">SIGN UP FOR NEWSLETTER</a>
-        <a id="legalese" href="/legal">LEGALESE</a>
+
+      <div class="newsletter">
+        <a href="">SIGN UP FOR NEWSLETTER</a>
+        <div class="newsletter-content">
+          <form action="mailto:joe@leisureofnyc.com" method="post" enctype="text/plain">
+            <input id="email" type="text" name="email" placeholder="EMAIL"><br>
+            <input id="submit" type="submit" value="SUBMIT">
+          </form>
+        </div>
+      </div>
+
+      <div class="legalese">
+        <a href="">LEGALESE</a>
+        <div class="legalese-content">
+          <a class="transition" href="#">PRIVACY POLICY</a>
+          <a class="transition" href="#">TERMS & CONDITIONS</a>
+          <a class="transition" href="#">RETURNS & EXCHANGES</a>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>

@@ -1,0 +1,157 @@
+.footer {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  background-color: #FDFDFD;
+  font-size: 16px;
+  color: #444;
+}
+
+#copyright {
+  margin: 18px;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#social-icons {
+  display: inline-block;
+  padding-left: 30%;
+}
+
+#social-icons a {
+  text-decoration: none;
+  color: #444;
+}
+
+.fa-twitter:hover {
+  color:#28C7FB;
+}
+
+.fa-instagram:hover {
+  color:#28C7FB;
+}
+
+/* ****************************** */
+/* DROPUP CSS FOR NEWSLETTER FORM */
+/* ****************************** */
+.newsletter {
+  margin: 16px;
+  margin-left: 23%;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+}
+
+.newsletter a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #444;
+}
+
+.newsletter-content {
+    display: none;
+    position: absolute;
+    background-color: #FDFDFD;
+    min-width: 160px;
+    bottom: 100%;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.newsletter:hover .newsletter-content {
+    display: block;
+}
+
+#submit {
+  display: inline-block;
+  height: 30px;
+  margin: 5px 20px 20px 20px;
+  width: 80%;
+
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  color: #FFF;
+  background-color: #444;
+  border-color: #444;
+}
+
+#submit:hover {
+  color: #FFF;
+  background-color: #222;
+  border-color: #222;
+}
+
+#email {
+  margin: 20px 20px 5px 20px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+/* Removes awkward default styles on some inputs for iOS */
+#email {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#email:focus {
+  border: 1px solid #33C3F0;
+  outline: 0;
+}
+
+
+/* ***************************** */
+/* DROPUP CSS FOR LEGALESE LINKS */
+/* ***************************** */
+.legalese {
+  margin: 16px;
+  margin-left: 35%;
+  position: absolute;
+  display: inline-block;
+}
+
+.legalese a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #444;
+}
+
+.legalese-content {
+    display: none;
+    position: absolute;
+    background-color: #FDFDFD;
+    width: 200px;
+    bottom: 100%;
+    padding: 10%;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.legalese-content a {
+    color: #444;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.legalese-content a:hover {
+  color:#28C7FB;
+}
+
+.legalese:hover .legalese-content {
+    display: block;
+}
