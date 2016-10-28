@@ -1,6 +1,9 @@
 $(document).ready(function(){
 	$('#products').hide();
 	$('#about').hide();
+	$('#privacy').hide();
+	$('#terms').hide();
+	$('#returns').hide();
 	$('#hr-top').hide();
 	$('#hr-bottom').hide();
 
@@ -41,6 +44,39 @@ $(document).ready(function(){
 				$('#hr-top').fadeOut('slow');
 				$('#hr-bottom').fadeOut('slow');
 	});
+	$('#privacy-link').click(function(e) {
+			e.preventDefault();
+			var active = getActiveDiv();
+
+				$(active).fadeOut('slow', function() {
+					$('#privacy').fadeIn('slow').addClass('active');
+				}).removeClass('active');
+
+				$('#hr-top').fadeIn('slow');
+				$('#hr-bottom').fadeIn('slow');
+	});
+	$('#terms-link').click(function(e) {
+			e.preventDefault();
+			var active = getActiveDiv();
+
+				$(active).fadeOut('slow', function() {
+					$('#terms').fadeIn('slow').addClass('active');
+				}).removeClass('active');
+
+				$('#hr-top').fadeIn('slow');
+				$('#hr-bottom').fadeIn('slow');
+	});
+	$('#returns-link').click(function(e) {
+			e.preventDefault();
+			var active = getActiveDiv();
+
+				$(active).fadeOut('slow', function() {
+					$('#returns').fadeIn('slow').addClass('active');
+				}).removeClass('active');
+
+				$('#hr-top').fadeIn('slow');
+				$('#hr-bottom').fadeIn('slow');
+	});
 });
 
 function getActiveDiv() {
@@ -50,6 +86,12 @@ function getActiveDiv() {
 		return '#products';
 	} else if ($('#about').hasClass('active')) {
 		return '#about';
+	} else if ($('#privacy').hasClass('active')) {
+		return '#privacy';
+	} else if ($('#terms').hasClass('active')) {
+		return '#terms';
+	} else if ($('#returns').hasClass('active')) {
+		return '#returns';
 	} else {
 		console.log('no active class! Error!');
 	}
