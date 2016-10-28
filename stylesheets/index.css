@@ -6,12 +6,20 @@ html, body {
   height: 100%;
   min-height: 100%;
   padding: 0;
+  margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
 }
 
 img {
   opacity: 0.8;
+  position: fixed;
+  top: 60px;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
 }
 
 .transition {
