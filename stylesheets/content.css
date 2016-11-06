@@ -1,5 +1,7 @@
 .jumbotron {
   display: block;
+  height: 100vh;
+  clear: both;
 }
 
 /* WELCOME PAGE */
@@ -20,16 +22,76 @@
   color: #A8A8A8;
 }
 
+@media only screen and (max-width: 700px) {
+  img {
+    position: absolute;
+    display: block;
+  }
+
+  #welcome {
+    height: auto;
+    clear: both;
+  }
+
+  #welcome-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #welcome-text {
+    display: block;
+    top: 55%;
+    width: auto;
+  }
+
+  .content-text {
+    display: block;
+    padding-right: 0;
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  img {
+    position: absolute;
+    display: block;
+  }
+
+  #welcome {
+    height: auto;
+    clear: both;
+  }
+
+  #welcome-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #welcome-text {
+    display: block;
+    top: 47%;
+    width: auto;
+  }
+
+  .content-text {
+    display: block;
+    padding-right: 0;
+    margin-right: 3%;
+  }
+}
+
 /* PRODUCTS PAGE */
 #hr-top {
-  position: absolute;
-  top: 53px;
+  position: fixed;
+  top: 52px;
   left: 0;
   right: 0;
 }
 
 #hr-bottom {
-  position: absolute;
+  position: fixed;
   bottom: 41px;
   left: 0;
   right: 0;
@@ -73,33 +135,228 @@
   border-color: #444;
 }
 
+@media only screen and (max-width: 1000px) {
+  #products {
+    height: 115%;
+  }
+
+  #promo {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    width: 55%;
+    height: auto;
+    padding: 0;
+    margin: 5%;
+    top: 3%;
+    left: 20%;
+    right: 5%;
+  }
+
+  #products-text {
+    display: block;
+    position: absolute;
+    top: 83%;
+    margin: 1%;
+    margin-left: 8%;
+    width: 85%;
+  }
+
+  #product-submit {
+    display: block;
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    margin: 1%;
+    margin-left: 28%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #products {
+    height: 115%;
+  }
+
+  #promo {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    width: 55%;
+    height: auto;
+    padding: 0;
+    margin: 5%;
+    top: 3%;
+    left: 20%;
+    right: 5%;
+  }
+
+  #products-text {
+    display: block;
+    position: absolute;
+    top: 67%;
+    margin: 1%;
+    margin-left: 8%;
+    width: 85%;
+  }
+
+  #product-submit {
+    display: block;
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    margin: 1%;
+    margin-left: 28%;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  #products-text {
+    top: 71%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #promo {
+    display: block;
+    position: absolute;
+    width: 65%;
+    height: auto;
+    padding: 0;
+    margin: 20%;
+    top: 5%;
+    left: 2%;
+    right: 5%;
+  }
+
+  #products-text {
+    display: block;
+    position: absolute;
+    top: 79%;
+    margin: 2%;
+    margin-left: 8%;
+    width: 85%;
+  }
+
+  #product-submit {
+    display: block;
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    margin: 1%;
+    margin-left: 28%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #products {
+    min-height: 100%;
+    width: 100%;
+  }
+
+  #promo {
+    display: block;
+    position: absolute;
+    width: 65%;
+    height: auto;
+    padding: 0;
+    margin: 20%;
+    top: 8%;
+    left: 2%;
+    right: 5%;
+  }
+
+  #products-text {
+    display: block;
+    position: absolute;
+    top: 65%;
+    margin: 2%;
+    margin-left: 8%;
+    width: 85%;
+  }
+
+  #product-submit {
+    display: block;
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    margin: 2%;
+    margin-left: 28%;
+  }
+}
+
 /* ABOUT US PAGE */
 #about-text {
-  color: #111;
+  color: #FAEBD7;
   top: 7%;
   padding-right: 10%;
   padding-left: 10%;
+  top: 62%;
 }
 
-/* LEGALESE SECTIONS */
-.legalese-section {
-  position: absolute;
-  top: 80px;
-  left: 20px;
-  right: 10px;
-  font-weight: 100;
-  font-size: 0.6em;
-  color: #444;
+@media only screen and (max-width: 800px) {
+  #about {
+    display:inline-block;
+    vertical-align:top;
+  }
+
+  #about img {
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 60px;
+  }
+
+  #about-text {
+    display: block;
+    position: absolute;
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
+    top: 62%;
+  }
 }
 
-.legalese-section h3 {
-  font-weight: 100;
+@media only screen and (max-width: 700px) {
+  #about-text {
+    top: 53%;
+  }
 }
 
-#privacy {
-  font-size: 0.9em;
+@media only screen and (max-width: 600px) {
+  #about-text {
+    top: 48%;
+  }
 }
 
-#returns {
-  font-size: 1em;
+@media only screen and (max-width: 500px) {
+  #about-text {
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  img {
+    position: absolute;
+    display: block;
+  }
+
+  #about {
+    display:inline-block;
+    vertical-align:top;
+  }
+
+  #about-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #about-text {
+    display: block;
+    top: 47%;
+    width: auto;
+  }
 }

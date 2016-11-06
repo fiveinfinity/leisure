@@ -28,8 +28,10 @@ $(document).ready(function(){
 					$('#products').fadeIn('slow').addClass('active');
 				}).removeClass('active');
 
-				$('#hr-top').fadeIn('slow');
-				$('#hr-bottom').fadeIn('slow');
+				if ($(window).width() >= 700) {
+					$('#hr-top').fadeIn('slow');
+					$('#hr-bottom').fadeIn('slow');
+				}
 	});
 
 	$('#about-link').click(function(e) {
@@ -52,8 +54,10 @@ $(document).ready(function(){
 					$('#privacy').fadeIn('slow').addClass('active');
 				}).removeClass('active');
 
-				$('#hr-top').fadeIn('slow');
-				$('#hr-bottom').fadeIn('slow');
+				if ($(window).width() >= 700) {
+					$('#hr-top').fadeIn('slow');
+					$('#hr-bottom').fadeIn('slow');
+				}
 	});
 	$('#terms-link').click(function(e) {
 			e.preventDefault();
@@ -63,8 +67,10 @@ $(document).ready(function(){
 					$('#terms').fadeIn('slow').addClass('active');
 				}).removeClass('active');
 
-				$('#hr-top').fadeIn('slow');
-				$('#hr-bottom').fadeIn('slow');
+				if ($(window).width() >= 700) {
+					$('#hr-top').fadeIn('slow');
+					$('#hr-bottom').fadeIn('slow');
+				}
 	});
 	$('#returns-link').click(function(e) {
 			e.preventDefault();
@@ -74,8 +80,10 @@ $(document).ready(function(){
 					$('#returns').fadeIn('slow').addClass('active');
 				}).removeClass('active');
 
-				$('#hr-top').fadeIn('slow');
-				$('#hr-bottom').fadeIn('slow');
+				if ($(window).width() >= 700) {
+					$('#hr-top').fadeIn('slow');
+					$('#hr-bottom').fadeIn('slow');
+				}
 	});
 });
 
