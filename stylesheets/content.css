@@ -19,7 +19,7 @@
 }
 
 #welcome-text {
-  color: #A8A8A8;
+  color: #F9F9F9;
 }
 
 @media only screen and (max-width: 700px) {
@@ -43,6 +43,7 @@
     display: block;
     top: 55%;
     width: auto;
+    color: #333;
   }
 
   .content-text {
@@ -211,7 +212,7 @@
 
 @media only screen and (max-width: 925px) {
   #products-text {
-    top: 71%;
+    top: 75%;
   }
 }
 
@@ -260,7 +261,7 @@
     height: auto;
     padding: 0;
     margin: 20%;
-    top: 8%;
+    top: 10%;
     left: 2%;
     right: 5%;
   }
@@ -268,7 +269,7 @@
   #products-text {
     display: block;
     position: absolute;
-    top: 65%;
+    top: 68%;
     margin: 2%;
     margin-left: 8%;
     width: 85%;
@@ -286,11 +287,12 @@
 
 /* ABOUT US PAGE */
 #about-text {
-  color: #FAEBD7;
+  color: #A8A8A8;
+  /* color: #FAEBD7; */
   top: 7%;
   padding-right: 10%;
   padding-left: 10%;
-  top: 62%;
+  top: 10%;
 }
 
 @media only screen and (max-width: 800px) {

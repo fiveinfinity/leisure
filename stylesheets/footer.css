@@ -160,8 +160,8 @@
   .footer-links {
     display: block;
     width: 100%;
-    margin: 0;
-  }
+    text-align: center;
+  }qa
 }
 
 @media only screen and (max-width: 400px) {
@@ -347,13 +347,14 @@ position: absolute; */
     min-width: 0;
     bottom: 0;
     text-align: center;
+    right: 36%;
   }
 
-  .legalese {
+  .legalese-content {
     display: block;
     width: 100%;
-    margin-left: 35%;
-  }
+    left: 0;
+}
 
   #legalese-rollover {
     display: none;
@@ -373,6 +374,9 @@ position: absolute; */
 
   .legalese {
     margin-left: 33%;
+  }
+  .newsletter-content {
+    right: 34%;
   }
 }
 
@@ -394,24 +398,40 @@ position: absolute; */
   .legalese {
     margin-left: 28%;
   }
+
+  .newsletter-content {
+    right: 32%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .newsletter {
-    margin-left: 22%;
+    margin-left: 18%;
+  }
+
+  .legalese-content {
+    margin-right: 10%;
   }
 
   .legalese {
     margin-left: 20%;
   }
+
+  .newsletter-content {
+    right: 27%;
+  }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
   .newsletter {
     margin-left: 15%;
   }
 
   .legalese {
     margin-left: 15%;
+  }
+
+  .newsletter-content {
+    right: 22%;
   }
 }
