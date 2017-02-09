@@ -1,0 +1,154 @@
+/* PRODUCTS PAGE */
+#hr-top {
+  position: fixed;
+  top: 52px;
+  left: 0;
+  right: 0;
+}
+
+#hr-bottom {
+  position: fixed;
+  bottom: 41px;
+  left: 0;
+  right: 0;
+}
+
+#promo {
+  display: inline-block;
+  height: auto;
+  width: 35%;
+  padding: 20px;
+  margin: 5% 0 0 15%;
+}
+
+#products-text {
+  display: inline-block;
+  width: 35%;
+  margin: 15% 0 0 55%;
+  font-weight: 100;
+  color: #444;
+}
+
+#products-text h3 {
+  font-weight: 100;
+}
+
+#buy {
+  position: absolute;
+  left: 53%;
+  top: 41%;
+  width: 500px;
+}
+
+#product-submit {
+  display: inline-block;
+  height: 60px;
+  margin: 20px 55% 0 5%;
+  width: 40%;
+
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  color: #FFF;
+  background-color: #444;
+  border-color: #444;
+}
+
+@media only screen and (max-width: 850px) {
+  #promo {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: auto;
+    padding: 0;
+    margin: 5%;
+    top: 50px;
+    left: 25%;
+    right: 5%;
+  }
+
+  #products-text {
+    display: block;
+    position: absolute;
+    top: 550px;
+    margin: 1%;
+    margin-left: 8%;
+    width: 85%;
+  }
+
+  #buy {
+    display: block;
+    position: absolute;
+    top: 700px;
+    left: 35%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #promo {
+    top: 130px;
+    left: 28%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  #products-text {
+  top: 520px;
+  }
+
+  #buy {
+  left: 32%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #promo {
+  width: 60%;
+  left: 16%;
+  }
+
+  #products-text {
+    top: 640px;
+  }
+
+  #buy {
+  left: 28%;
+  top: 815px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  #products-text {
+    top: 580px;
+  }
+
+  #buy {
+  left: 23%;
+  top: 780px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #products {
+    margin-bottom: 200px;
+  }
+
+  #promo {
+  width: 60%;
+  left: 16%;
+  }
+
+  #products-text {
+    top: 475px;
+    height: 500px;
+  }
+
+  #buy {
+  left: 17%;
+  top: 715px;
+  }
+}

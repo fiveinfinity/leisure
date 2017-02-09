@@ -1,0 +1,111 @@
+.legalese {
+  margin: 16px;
+  display: inline-block;
+}
+
+.legalese a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #444;
+}
+
+.legalese-content {
+    display: none;
+    position: absolute;
+    background-color: #FDFDFD;
+    width: 200px;
+    bottom: 66%;
+    margin-right: 5px;
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    right: 30px;
+}
+
+.legalese-content a {
+    color: #444;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.legalese-content a:hover {
+  color:#28C7FB;
+}
+
+.legalese:hover .legalese-content {
+    display: block;
+}
+
+/* LEGALESE SECTIONS */
+.legalese-section {
+  position: absolute;
+  z-index: -1;
+  height: 130%;
+  top: 65px;
+  left: 20px;
+  right: 10px;
+  font-weight: 100;
+  font-size: 0.9em;
+  color: #444;
+}
+
+.legalese-section h3 {
+  font-weight: 100;
+}
+
+#terms {
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 700px) {
+  .legalese-content {
+    display: block;
+    width: 100%;
+    left: 0;
+}
+
+  #legalese-rollover {
+    display: none;
+  }
+
+  .legalese-content {
+    display: block;
+    top: 80px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .legalese {
+    margin-left: 33%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .legalese {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .legalese {
+    margin-left: 28%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .legalese-content {
+    margin-right: 10%;
+  }
+  .legalese {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .legalese {
+    margin-left: 15%;
+  }
+}

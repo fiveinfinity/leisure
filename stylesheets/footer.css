@@ -1,5 +1,5 @@
 .footer {
-  position: fixed;
+  position: absolute;
   margin: 0;
   padding: 0;
   height: 50px;
@@ -139,9 +139,10 @@
 /* SMALL VIEW */
 @media only screen and (max-width: 700px) {
   .footer {
-    position: relative;
-    height: 300px;
-    top: 170px;
+   position: relative;
+   height:280px;
+   bottom:0px;
+   top: 100vh;
   }
 
   #copyright {
@@ -161,15 +162,10 @@
     display: block;
     width: 100%;
     text-align: center;
-  }qa
+  }
 }
 
 @media only screen and (max-width: 400px) {
-  .footer {
-    position: relative;
-    height: 280px;
-  }
-
   #copyright {
     padding-top: 10px;
     margin-left: 0;
@@ -187,251 +183,5 @@
     display: block;
     width: 100%;
     margin: 0;
-  }
-}
-
-/* ****************************** */
-/* DROPUP CSS FOR NEWSLETTER FORM */
-/* ****************************** */
-.newsletter {
-  margin: 16px;
-/*   margin-left: 23%;
-position: absolute; */
-  display: inline-block;
-  z-index: 1;
-}
-
-.newsletter a {
-  text-decoration: none;
-  font-size: 13px;
-  color: #444;
-}
-
-.newsletter-content {
-    display: none;
-    position: absolute;
-    background-color: #FDFDFD;
-    min-width: 160px;
-    bottom: 60%;
-    border-radius: 4px;
-    box-shadow: none;
-    box-sizing: border-box;
-}
-
-.newsletter:hover .newsletter-content {
-    display: block;
-}
-
-#submit {
-  display: inline-block;
-  height: 30px;
-  margin: 5px 20px 20px 20px;
-  width: 80%;
-
-  color: #555;
-  text-align: center;
-  font-size: 11px;
-  text-decoration: none;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  box-sizing: border-box;
-  color: #FFF;
-  background-color: #444;
-  border-color: #444;
-}
-
-#submit:hover {
-  color: #FFF;
-  background-color: #222;
-  border-color: #222;
-}
-
-#email {
-  margin: 20px 20px 5px 20px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
-}
-/* Removes awkward default styles on some inputs for iOS */
-#email {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-#email:focus {
-  border: 1px solid #33C3F0;
-  outline: 0;
-}
-
-
-/* ***************************** */
-/* DROPUP CSS FOR LEGALESE LINKS */
-/* ***************************** */
-.legalese {
-  margin: 16px;
-  display: inline-block;
-}
-
-.legalese a {
-  text-decoration: none;
-  font-size: 13px;
-  color: #444;
-}
-
-.legalese-content {
-    display: none;
-    position: absolute;
-    background-color: #FDFDFD;
-    width: 200px;
-    bottom: 66%;
-    margin-right: 5px;
-    padding: 0;
-    border-radius: 4px;
-    box-shadow: none;
-    box-sizing: border-box;
-    right: 30px;
-}
-
-.legalese-content a {
-    color: #444;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.legalese-content a:hover {
-  color:#28C7FB;
-}
-
-.legalese:hover .legalese-content {
-    display: block;
-}
-
-/* LEGALESE SECTIONS */
-.legalese-section {
-  position: absolute;
-  z-index: -1;
-  height: 130%;
-  top: 65px;
-  left: 20px;
-  right: 10px;
-  font-weight: 100;
-  font-size: 0.9em;
-  color: #444;
-}
-
-.legalese-section h3 {
-  font-weight: 100;
-}
-
-#terms {
-  font-size: 0.8em;
-}
-
-@media only screen and (max-width: 700px) {
-  .newsletter {
-    display: block;
-    width: 100%;
-    margin-left: 35%;
-  }
-
-  .newsletter a {
-    display: none;
-  }
-
-  .newsletter-content {
-    display: block;
-    min-width: 0;
-    bottom: 0;
-    text-align: center;
-    right: 36%;
-  }
-
-  .legalese-content {
-    display: block;
-    width: 100%;
-    left: 0;
-}
-
-  #legalese-rollover {
-    display: none;
-  }
-
-  .legalese-content {
-    display: block;
-    top: 80px;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .newsletter {
-    margin-left: 33%;
-  }
-
-  .legalese {
-    margin-left: 33%;
-  }
-  .newsletter-content {
-    right: 34%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .newsletter {
-    margin-left: 30%;
-  }
-
-  .legalese {
-    margin-left: 30%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .newsletter {
-    margin-left: 28%;
-  }
-
-  .legalese {
-    margin-left: 28%;
-  }
-
-  .newsletter-content {
-    right: 32%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .newsletter {
-    margin-left: 18%;
-  }
-
-  .legalese-content {
-    margin-right: 10%;
-  }
-
-  .legalese {
-    margin-left: 20%;
-  }
-
-  .newsletter-content {
-    right: 27%;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .newsletter {
-    margin-left: 15%;
-  }
-
-  .legalese {
-    margin-left: 15%;
-  }
-
-  .newsletter-content {
-    right: 22%;
   }
 }

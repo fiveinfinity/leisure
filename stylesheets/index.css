@@ -19,6 +19,13 @@ img {
   height: auto;
 }
 
+.jumbotron {
+  display: block;
+  height: 100vh;
+  clear: both;
+}
+
+
 .transition {
   -o-transition: 1s;
   -ms-transition: 1s;
