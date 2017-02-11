@@ -4,6 +4,7 @@
   top: 52px;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 
 #hr-bottom {
@@ -11,6 +12,17 @@
   bottom: 41px;
   left: 0;
   right: 0;
+}
+
+#products {
+  overflow: scroll;
+
+}
+
+#products img {
+  position: absolute;
+  z-index: -2;
+  padding-bottom: 60px;
 }
 
 #promo {
@@ -36,12 +48,13 @@
 #buy {
   position: absolute;
   left: 53%;
-  top: 41%;
+  top: 350px;
   width: 500px;
+  z-index: -2;
 }
 
 #product-submit {
-  display: inline-block;
+  display: block;
   height: 60px;
   margin: 20px 55% 0 5%;
   width: 40%;

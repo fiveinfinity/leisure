@@ -19,10 +19,7 @@
     border-radius: 4px;
     box-shadow: none;
     box-sizing: border-box;
-}
 
-.newsletter:hover .newsletter-content {
-    display: block;
 }
 
 #submit {
@@ -46,7 +43,6 @@
 #submit:hover {
   color: #FFF;
   background-color: #222;
-  border-color: #222;
 }
 
 #email {

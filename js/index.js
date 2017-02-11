@@ -26,4 +26,17 @@ $(document).ready(function(){
 				}
 			}
 	});
+
+	// Below allows for a delay on mouseoff
+	$('.newsletter').hoverIntent({
+    over: function() {$('.newsletter .newsletter-content').css('display', 'block')},
+    out: function() {$('.newsletter .newsletter-content').css('display', 'none')},
+    timeout: 1000
+	});
+
+	$('.legalese').hoverIntent({
+    over: function() {$('.legalese .legalese-content').css('display', 'block')},
+    out: function() {$('.legalese .legalese-content').css('display', 'none')},
+    timeout: 1000
+	});
 });
