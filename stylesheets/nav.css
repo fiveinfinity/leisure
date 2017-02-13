@@ -125,6 +125,20 @@
   }
 }
 
+@media only screen and (max-width: 350px) {
+  .nav {
+    height: 130px;
+  }
+  #welcome-link {
+    margin: 10px 88px;
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    margin: 10px 103px;
+  }
+}
+
 
 #welcome-link:hover {
   color:#28C7FB;

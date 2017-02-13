@@ -1,32 +1,38 @@
-.content-text {
+#welcome-text {
   position: absolute;
   top: 12%;
   left: 3%;
   padding-right: 50%;
   font-weight: 100;
+  color: #F9F9F9;
   word-wrap: break-word;
 }
 
-.content-text h3 {
+#welcome-text h3 {
   font-weight: 100;
 }
 
-#welcome-text {
-  color: #F9F9F9;
+#welcome img {
+  width: auto;
+  height: 100%;
 }
 
-@media only screen and (max-width: 700px) {
-  img {
-    position: absolute;
-    display: block;
+@media only screen and (min-width: 1450px) {
+  #welcome img {
+    width: 100%;
+    height: auto;
   }
+}
 
+
+@media only screen and (max-width: 700px) {
   #welcome {
     height: auto;
     clear: both;
   }
 
-  #welcome-img {
+  #welcome img {
+    position: absolute;
     display: block;
     width: 100%;
     height: auto;
@@ -37,10 +43,6 @@
     top: 55%;
     width: auto;
     color: #333;
-  }
-
-  .content-text {
-    display: block;
     padding-right: 0;
     margin-right: 3%;
   }
@@ -63,17 +65,13 @@
 }
 
 @media only screen and (max-width: 400px) {
-  img {
-    position: absolute;
-    display: block;
-  }
-
   #welcome {
     height: auto;
     clear: both;
   }
 
-  #welcome-img {
+  #welcome img {
+    position: absolute;
     display: block;
     width: 100%;
     height: auto;
@@ -82,14 +80,14 @@
   #welcome-text {
     display: block;
     overflow-y: scroll;
-    top: 330px;
+    top: 315px;
     height: 350px;
     width: auto;
   }
+}
 
-  .content-text {
-    display: block;
-    padding-right: 0;
-    margin-right: 3%;
+@media only screen and (max-width: 350px) {
+  #welcome-text {
+    top: 270px;
   }
 }

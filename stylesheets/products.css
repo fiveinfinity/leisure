@@ -1,4 +1,3 @@
-/* PRODUCTS PAGE */
 #hr-top {
   position: fixed;
   top: 52px;
@@ -16,21 +15,17 @@
 
 #products {
   overflow: scroll;
-
 }
 
 #products img {
   position: absolute;
-  z-index: -2;
-  padding-bottom: 60px;
-}
-
-#promo {
   display: inline-block;
   height: auto;
   width: 35%;
   padding: 20px;
   margin: 5% 0 0 15%;
+  z-index: -2;
+  padding-bottom: 60px;
 }
 
 #products-text {
@@ -47,18 +42,17 @@
 
 #buy {
   position: absolute;
-  left: 53%;
-  top: 350px;
+  left: 53.5%;
+  top: 420px;
   width: 500px;
   z-index: -2;
 }
 
-#product-submit {
+#buy input {
   display: block;
   height: 60px;
   margin: 20px 55% 0 5%;
   width: 40%;
-
   color: #555;
   text-align: center;
   font-size: 11px;
@@ -71,8 +65,15 @@
   border-color: #444;
 }
 
+@media only screen and (max-width: 1220px) {
+  #buy {
+  left: 52.5%;
+  top: 380px;
+  }
+}
+
 @media only screen and (max-width: 850px) {
-  #promo {
+  #products img {
     display: block;
     position: absolute;
     width: 40%;
@@ -102,7 +103,7 @@
 }
 
 @media only screen and (max-width: 700px) {
-  #promo {
+  #products img {
     top: 130px;
     left: 28%;
   }
@@ -119,7 +120,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #promo {
+  #products img {
   width: 60%;
   left: 16%;
   }
@@ -148,9 +149,11 @@
 @media only screen and (max-width: 425px) {
   #products {
     margin-bottom: 200px;
+    height: auto;
+    overflow-x: hidden;
   }
 
-  #promo {
+  #products img {
   width: 60%;
   left: 16%;
   }
@@ -161,7 +164,18 @@
   }
 
   #buy {
-  left: 17%;
+  left: 28%;
+  width: 80%;
   top: 715px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #products-text {
+    top: 400px;
+  }
+
+  #buy {
+  top: 630px;
   }
 }

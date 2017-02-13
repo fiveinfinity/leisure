@@ -1,10 +1,15 @@
 #about-text {
-  color: #A8A8A8;
-  /* color: #FAEBD7; */
-  top: 7%;
+  position: absolute;
+  top: 10%;
   padding-right: 10%;
   padding-left: 10%;
-  top: 10%;
+  font-weight: 100;
+  word-wrap: break-word;
+  color: #999;
+}
+
+#about-text h3 {
+  font-weight: 100;
 }
 
 @media only screen and (max-width: 800px) {
@@ -26,8 +31,7 @@
     display: block;
     position: absolute;
     width: 90%;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 10px;
   }
 }
 
@@ -49,30 +53,20 @@
   }
 }
 
-
-/* refactor */
 @media only screen and (max-width: 400px) {
-  img {
-    position: absolute;
+  #about-text {
     display: block;
-  }
+    overflow-y: scroll;
+    height: 380px;
+    top: 310px;
+    width: auto;
 
-  #about {
-    display:inline-block;
-    vertical-align:top;
   }
-
-  #about-img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-#about-text {
-  display: block;
-  overflow-y: scroll;
-  top: 320px;
-  height: 300px;
-  width: auto;
 }
+
+@media only screen and (max-width: 350px) {
+  #about-text {
+    top: 270px;
+    height: 340px;
+  }
 }

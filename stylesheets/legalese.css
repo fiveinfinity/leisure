@@ -101,6 +101,20 @@
   .legalese {
     margin-left: 20%;
   }
+
+  .legalese-section.active {
+    position: relative;
+    top: 130px;
+    overflow-y: scroll;
+    height: 600px;
+    margin-bottom: -500px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+  }
+
+  #terms {
+    padding-bottom: 35px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
