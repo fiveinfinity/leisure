@@ -13,15 +13,11 @@
   right: 0;
 }
 
-#products {
-  overflow: scroll;
-}
-
 #products img {
   position: absolute;
   display: inline-block;
   height: auto;
-  width: 35%;
+  width: 30%;
   padding: 20px;
   margin: 5% 0 0 15%;
   z-index: -2;
